@@ -17,7 +17,7 @@ html {
   --mainwhite: #fff;
   --maingray: #e5e5e5;
   --maintransition: all 0.3s ease-in-out;
-  --letterspacing: 0.3rem;
+  --letterspacing: 0.48rem;
 }
 
 body {
@@ -34,6 +34,7 @@ a,
 a:link {
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 
 span {
@@ -48,6 +49,16 @@ ul {
   list-style-type: none;
 }
 
+.btn {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--maindark);
+  font-size: 1.6rem;
+  background-color: var(--primarycolor);
+  outline: 0.4rem solid var(--primarycolor);
+  outline-offset: 0.4rem;
+  text-transform: uppercase;
+  transition: var(--maintransition);
+}
 /* ********************
     Utiles end
    ******************** */
@@ -55,9 +66,61 @@ ul {
 /* ********************
     Header section start
    ******************** */
+.section-header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/home.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
 
+.section-header-des {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: var(--letterspacing);
+}
+
+.section-header-des--subtitle {
+  color: var(--primarycolor);
+  font-size: 3.2rem;
+  animation: slidefromright 5s ease-in-out 1;
+}
+
+.section-header-des--title {
+  color: var(--mainwhite);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5.6rem;
+  text-transform: uppercase;
+  line-height: 7.28rem;
+  margin: 4rem 0 3.2rem 0;
+  animation: slidefromleft 5s ease-in-out 1;
+}
+
+.section-header-btn {
+  padding: 2rem 2.4rem;
+  animation: show 5s ease-in-out 1;
+}
+
+.section-header-btn:hover {
+  color: var(--maingray);
+  opacity: 0.7;
+}
 /* ********************
     Header section end
+   ******************** */
+
+/* ********************
+    divider section start
+   ******************** */
+
+/* ********************
+    divider section end
    ******************** */
 
 /* ********************
@@ -98,4 +161,51 @@ ul {
 
 /* ********************
     footer section end
+   ******************** */
+
+/* ********************
+    animation start
+   ******************** */
+@keyframes show {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slidefromright {
+  0% {
+    transform: translateX(100rem);
+  }
+  50% {
+    transform: translateX(-20rem);
+  }
+  75% {
+    transform: translateX(5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidefromleft {
+  0% {
+    transform: translateX(-100rem);
+  }
+  50% {
+    transform: translateX(20rem);
+  }
+  75% {
+    transform: translateX(-5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* ********************
+    animation end
    ******************** */
