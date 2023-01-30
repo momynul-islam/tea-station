@@ -22,14 +22,37 @@
     <!-- css link -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- script link -->
+    <script defer src="script.js"></script>
+
     <!-- website title -->
     <title>Tea Station</title>
   </head>
   <body>
     <!-- ******************
+        navigation start
+    ************************* -->
+    <nav class="nav">
+      <ul class="links">
+        <li class="close-btn"><i class="fa-regular fa-rectangle-xmark"></i></li>
+        <li class="link"><a href="#header-id">home</a></li>
+        <li class="link"><a href="#feature-id">features</a></li>
+        <li class="link"><a href="#about-id">about</a></li>
+        <li class="link"><a href="#product-id">products</a></li>
+        <li class="link"><a href="#service-id">services</a></li>
+        <li class="link"><a href="#contact-id">contact</a></li>
+      </ul>
+    </nav>
+    <!-- ******************
+        navigation end
+    ************************* -->
+    <!-- ******************
         header section start
     ************************* -->
-    <header class="section-header">
+    <header class="section-header" id="header-id">
+      <div class="menu-bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <div class="section-header-des">
         <p class="section-header-des--subtitle">
           Over one hundred flavours of tea
@@ -53,7 +76,7 @@
     <!-- ******************
         features section start
     ************************* -->
-    <section class="features">
+    <section class="features" id="feature-id">
       <div class="feature">
         <div class="feature-icon"><i class="fa-solid fa-mug-hot"></i></div>
         <h3 class="feature-title">made in us</h3>
@@ -98,7 +121,7 @@
     <!-- ******************
         about section start
     ************************* -->
-    <section class="section-about">
+    <section class="section-about" id="about-id">
       <div class="section-about-img">
         <img src="images/about.jpg" alt="tea catle" />
       </div>
@@ -121,7 +144,7 @@
     <!-- ******************
         products section start
     ************************* -->
-    <section class="section-product">
+    <section class="section-product" id="product-id">
       <div class="section-product-des">
         <h3 class="section-label">check out</h3>
         <h2 class="section-title">our products</h2>
@@ -163,7 +186,7 @@
     <!-- ******************
         services section start
     ************************* -->
-    <section class="section-service">
+    <section class="section-service" id="service-id">
       <div class="section-service-des">
         <h3 class="section-label">Explore</h3>
         <h2 class="section-title">our services</h2>
@@ -221,7 +244,7 @@
     <!-- ******************
         contact section start
     ************************* -->
-    <section class="section-contact">
+    <section class="section-contact" id="contact-id">
       <div class="contact-info">
         <div class="contact">
           <div class="contact-header">
