@@ -22,6 +22,7 @@ html {
 
 body {
   font-family: "Grand Hotel", cursive;
+  font-family: "Times New Roman", Times, serif;
 }
 /* ********************
     Global end
@@ -50,7 +51,6 @@ ul {
 }
 
 .btn {
-  font-family: "Times New Roman", Times, serif;
   color: var(--maindark);
   font-size: 1.6rem;
   background-color: var(--primarycolor);
@@ -89,12 +89,12 @@ ul {
 .section-header-des--subtitle {
   color: var(--primarycolor);
   font-size: 3.2rem;
+  font-family: "Grand Hotel", cursive;
   animation: slidefromright 5s ease-in-out 1;
 }
 
 .section-header-des--title {
   color: var(--mainwhite);
-  font-family: "Times New Roman", Times, serif;
   font-size: 5.6rem;
   text-transform: uppercase;
   line-height: 7.28rem;
@@ -118,17 +118,81 @@ ul {
 /* ********************
     divider section start
    ******************** */
-
+.section-divider {
+  height: 0.8rem;
+  background-image: linear-gradient(
+    to left,
+    var(--primarycolor),
+    var(--secondarycolor),
+    var(--primarycolor)
+  );
+}
 /* ********************
     divider section end
    ******************** */
 
 /* ********************
-    skills section start
+    features section start
    ******************** */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--maingray);
+}
+
+.feature {
+  text-align: center;
+  padding: 4rem;
+  transition: var(--maintransition);
+}
+
+.feature-icon {
+  font-size: 4rem;
+  transition: var(--maintransition);
+}
+
+.feature-title {
+  margin: 2.4rem 0;
+  color: var(--primarycolor);
+  text-transform: uppercase;
+  letter-spacing: var(--letterspacing);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: var(--maintransition);
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  transition: var(--maintransition);
+}
+
+.feature:hover {
+  background-color: var(--primarycolor);
+}
+
+.feature:hover .feature-title,
+.feature:hover .feature-text {
+  color: var(--mainwhite);
+}
+
+.feature:hover .feature-icon {
+  transform: translateY(-0.5rem);
+}
+
+@media only screen and (max-width: 576px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1280px) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 /* ********************
-    skills section end
+    features section end
    ******************** */
 
 /* ********************
