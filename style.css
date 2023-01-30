@@ -345,6 +345,124 @@ ul {
    ******************** */
 
 /* ********************
+    services section start
+   ******************** */
+.section-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding: 4rem;
+  background-color: var(--maingray);
+}
+
+.section-service-des {
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.service {
+  border: 0.4rem solid var(--primarycolor);
+  border-radius: 1.6rem;
+  padding: 0.4rem;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  transition: var(--maintransition);
+}
+
+.service:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.service-img,
+.service-img img {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.service-img img {
+  width: 33.5rem;
+  height: 33.5rem;
+}
+
+.service-info {
+  position: relative;
+  background-color: var(--primarycolor);
+  color: var(--mainwhite);
+  text-align: center;
+  padding: 4rem 0 1.6rem 0;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.service-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  line-height: 3.2rem;
+  letter-spacing: var(--letterspacing);
+}
+
+.service-btn {
+  background-color: var(--mainwhite);
+  color: var(--maindark);
+  font-size: 1.4rem;
+  padding: 1.2rem 3.2rem;
+  border: 0.3rem solid var(--mainwhite);
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: var(--maintransition);
+}
+
+.service-btn:hover {
+  background-color: var(--primarycolor);
+  color: var(--mainwhite);
+}
+
+.service-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.2rem;
+  color: var(--maindark);
+  background-color: var(--secondarycolor);
+  border-radius: 50%;
+  border: 0.4rem solid var(--primarycolor);
+  padding: 0.8rem 1rem;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 576px) {
+  .services {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1250px) {
+  .services {
+    flex-wrap: wrap;
+  }
+}
+
+/* ********************
+    services section end
+   ******************** */
+
+/* ********************
     contact section start
    ******************** */
 
