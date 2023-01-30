@@ -60,6 +60,11 @@ ul {
   transition: var(--maintransition);
 }
 
+.btn:hover {
+  opacity: 0.7;
+  color: var(--maingray);
+}
+
 .section-label {
   font-family: "Grand Hotel", cursive;
   font-size: 3.2rem;
@@ -76,6 +81,23 @@ ul {
 .section-text {
   font-size: 1.6rem;
   margin: 1.6rem 0;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  padding-bottom: 1.6rem;
+  margin-bottom: 3.2rem;
+  font-size: 1.4rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  text-transform: uppercase;
 }
 /* ********************
     Utiles end
@@ -123,11 +145,6 @@ ul {
 .section-header-btn {
   padding: 2rem 2.4rem;
   animation: show 5s ease-in-out 1;
-}
-
-.section-header-btn:hover {
-  color: var(--maingray);
-  opacity: 0.7;
 }
 /* ********************
     Header section end
@@ -284,12 +301,6 @@ ul {
 .section-product-btn {
   margin-top: 3.2rem;
   padding: 1.2rem 2rem;
-  transition: var(--maintransition);
-}
-
-.section-product-btn:hover {
-  opacity: 0.7;
-  color: var(--maingray);
 }
 
 .products {
@@ -465,7 +476,69 @@ ul {
 /* ********************
     contact section start
    ******************** */
+.section-contact {
+  display: flex;
+  padding: 4rem;
+  max-width: 117rem;
+  margin: 0 auto;
+}
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 2rem;
+  width: 50%;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Grand Hotel", cursive;
+  font-size: 3.2rem;
+  color: var(--primarycolor);
+  letter-spacing: calc(var(--letterspacing) * 2);
+}
+
+.contact-text {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.contact-form {
+  padding: 4rem;
+  width: 50%;
+}
+
+input,
+textarea {
+  border-bottom: 0.2rem solid var(--primarycolor);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--primarycolor);
+  letter-spacing: var(--letterspacing);
+}
+
+.send-btn {
+  width: auto;
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  margin-top: 3.2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .section-contact {
+    flex-direction: column;
+  }
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
 /* ********************
     contact section end
    ******************** */
