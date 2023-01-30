@@ -1,0 +1,101 @@
+/* ********************
+    Global start
+   ******************** */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --primarycolor: #698f3f;
+  --secondarycolor: #fca311;
+  --maindark: #3a3e3b;
+  --mainwhite: #fff;
+  --maingray: #e5e5e5;
+  --maintransition: all 0.3s ease-in-out;
+  --letterspacing: 0.3rem;
+}
+
+body {
+  font-family: "Grand Hotel", cursive;
+}
+/* ********************
+    Global end
+   ******************** */
+
+/* ********************
+    Utiles start
+   ******************** */
+a,
+a:link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ********************
+    Utiles end
+   ******************** */
+
+/* ********************
+    Header section start
+   ******************** */
+
+/* ********************
+    Header section end
+   ******************** */
+
+/* ********************
+    skills section start
+   ******************** */
+
+/* ********************
+    skills section end
+   ******************** */
+
+/* ********************
+    about section start
+   ******************** */
+
+/* ********************
+    about section end
+   ******************** */
+
+/* ********************
+    products section start
+   ******************** */
+
+/* ********************
+    products section end
+   ******************** */
+
+/* ********************
+    contact section start
+   ******************** */
+
+/* ********************
+    contact section end
+   ******************** */
+
+/* ********************
+    footer section start
+   ******************** */
+
+/* ********************
+    footer section end
+   ******************** */
