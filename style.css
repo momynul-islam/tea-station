@@ -211,6 +211,16 @@ textarea::placeholder {
   padding: 2rem 2.4rem;
   animation: show 5s ease-in-out 1;
 }
+
+@media only screen and (max-width: 692px) {
+  .section-header-des--subtitle {
+    font-size: 2 rem;
+  }
+  .section-header-des--title {
+    font-size: 2.8rem;
+    line-height: 3.58rem;
+  }
+}
 /* ********************
     Header section end
    ******************** */
